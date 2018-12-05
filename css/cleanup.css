@@ -4,11 +4,11 @@
     display: none;
 }
 
-#wall #tag-2 {
+div#wall #tag-2 {
     display: none;
 }
 
-#wall #tag-3.slick.wicked {
+div#wall #tag-3.slick.wicked {
   display: none;
 }
 
@@ -17,14 +17,15 @@
 }
 
 
-#wall .parent > div {
+div#wall .parent + .parent #tag-5.slick {
   display: none;
-} 
-
-#wall .parent > div #tag-6 {
-  display: none; 
 }
 
-#wall * { 
+
+div#wall div.parent div + div:last-child div#tag-6 {
+  display: none;
+}
+
+body div#wall div.parent div:first-child > #tag-7.slick {
   display: none;
 }
